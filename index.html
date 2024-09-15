@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="css.css">
@@ -11,22 +10,20 @@
  <div class="form">
     <h1>Registro</h1>
     <form id="registro">
-        <label
-        for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Insira seu nome de usuário" name="nome"oninput="validarNome()" required>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Insira seu nome de usuário" name="nome" oninput="validarNome()" required>
         <span id="erroNome" class="erro-msg"></span>
         
         <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" oninput="validarEmail()" placeholder="Insira seu email" required>
-            <span id="erroEmail" class="erro-msg"></span>
+        <input type="email" id="email" name="email" oninput="validarEmail()" placeholder="Insira seu email" required>
+        <span id="erroEmail" class="erro-msg"></span>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" oninput="validarSenha()" placeholder="Insira sua senha" required>
-            <span id="erroSenha" class="erro-msg"></span>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" oninput="validarSenha()" placeholder="Insira sua senha" required>
+        <span id="erroSenha" class="erro-msg"></span>
             
-            <button type="submit" id="enviar">Enviar</button>
-            <button type="reset" id="reset">Reiniciar</button>
-   
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="reset">Reiniciar</button>
     </form>
  </div>
     <script src="js.js"></script>
